@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sudoku</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin: auto;
+    }
+
+    td {
+      border: 1px solid #000;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sudoku</h1>
+  <table id="sudoku-table">
+    <!-- Replace the values below with your initial Sudoku board -->
+    <tr>
+      <td>5</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td>7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Add more rows here -->
+  </table>
+
+  <script src="sudoku.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      init();
+    });
+  </script>
+</body>
+</html>
